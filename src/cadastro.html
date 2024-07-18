@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>uc12 - cadastro</title>
+    <link rel="stylesheet" href="cadastro-style.css" />
+</head>
+
+<body>
+    <header class="header-nav">
+        <nav class="horizontal-navbar"></nav>
+    </header>
+    <div class="vertical-navbar">
+        <div class="logo">
+            <a href="index.html"><img src="../images/X-squared.svg" alt="Logo" /></a>
+        </div>
+        <div class="vertical-menu">
+            <a href="index.html">Página inicial</a>
+            <a href="emprestimo.html">Empréstimos</a>
+            <a href="cadastro.html">Seja nosso cliente</a>
+        </div>
+    </div>
+    <main>
+        <section id="header">
+            <div class="top">
+                <h1>Seja nosso cliente</h1>
+            </div>
+            <div class="bottom">
+                <img src="../images/retangulo.png" alt="Imagem">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi totam quasi facilis beatae sit
+                    et at molestias, illo magnam assumenda eveniet, minus provident expedita veritatis voluptatibus.
+                    Accusamus, architecto praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+                    nisi hic adipisci earum saepe vel
+                    doloremque quia. Expedita, soluta sequi nostrum hic enim amet id dolorum illum reiciendis libero
+                    optio!</p>
+            </div>
+        </section>
+        <section id="cadastro">
+            <form action="cadastrar-cliente">
+                <div class="input">
+                    <label for="text">Nome</label><br>
+                    <input type="text" name="nome" id="">
+                </div>
+                <div class="input">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="">
+                </div>
+                <div class="input">
+                    <label for="tel">Celular</label><br>
+                    <input type="tel" name="celular" id="">
+                </div>
+                <div class="input">
+                    <label for="seviço">Serviço</label><br>
+                    <select name="serviço" id="">
+                        <option value="seila">seila</option>
+                        <option value="naosei">naosei</option>
+                    </select>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="aposentado" id="checkbox">
+                    <label for="checkbox">Aposentado</label>
+                </div>
+                <input type="button" value="Registrar" id="button">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <p>Endereço: rua rau rua rau</p>
+            <p>Telefone: (xx) xxxxx-xxxx</p>
+            <p>Email: email@email.com</p>
+        </div>
+        <div class="footer-links">
+            <a href="#"><img src="../images/bxl-instagram.svg" alt="Instagram logo"></a>
+            <a href="#"><img src="../images/bxl-facebook-circle.svg" alt="Facebook logo"></a>
+            <a href="#"><img src="../images/bxl-twitter.svg" alt="X logo"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
