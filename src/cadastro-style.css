@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  background-color: #d2d7ff;
 }
 
 main {
@@ -21,17 +22,18 @@ main {
 footer {
   display: flex;
   justify-content: space-between;
+  height: 90vh;
   margin-left: 200px;
-  margin-top: 250px;
+  margin-top: 25%;
   padding: 100px;
-  border-top: solid;
-  background-color: #333;
+  background-color: #2f3a9d;
+  z-index: 99999999;
 }
 
 /* ----------------------------- */
 .vertical-navbar {
   width: 200px;
-  background-color: #333;
+  background-color: #2f3a9d;
   color: #fff;
   height: 100%;
   position: fixed;
@@ -39,13 +41,12 @@ footer {
   top: 0;
   overflow-x: hidden;
   text-decoration: none;
-  border-right: solid black;
 }
 
 .logo {
   display: block;
   text-align: center;
-  background-color: #333;
+  background-color: #2f3a9d;
   z-index: 9999;
 }
 
@@ -65,7 +66,7 @@ footer {
 }
 
 .vertical-menu a:hover {
-  background-color: #555;
+  background-color: #4453e0;
 }
 
 /* -------------------- */
@@ -84,28 +85,49 @@ footer {
   justify-content: space-between;
 }
 
-.bottom p {
-  padding-left: 50px;
+.bottom img {
+  height: 400px;
+  width: 600px;
+  border-radius: 10%;
 }
 
+.bottom p {
+  padding-left: 50px;
+  text-align: justify;
+}
+
+/* -------------------- */
 #cadastro {
-  margin-top: 100px;
+  margin-top: 10%;
   width: 100%;
 }
 
-.input {
-  font-size: 20px;
+.registerBox {
+  width: 40%;
+  padding: 50px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.input {;
   margin-bottom: 15px;
   width: 100%;
   display: grid;
 }
 
+.input label {
+  font-size: 20px;
+  display: block; 
+}
+
 .input input {
   height: 30px;
+  border-radius: 5px;
 }
 
 .input select {
-  height: 30px;
+  height: 32px;
+  border-radius: 5px;
 }
 
 .checkbox {
@@ -122,13 +144,20 @@ footer {
   height: 35px;
   width: 120px;
   margin-top: 15px;
+  border-radius: 5px;
+  background-color: #e0a734;
 }
-/* -------------------- */
 
+#button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* -------------------- */
 .footer-text {
   width: 100%;
   text-align: center;
-  align-items: center;
+  align-content: center;
 }
 
 .footer-text p {

@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  background-color: #d2d7ff;
 }
 
 main {
@@ -21,17 +22,18 @@ main {
 footer {
   display: flex;
   justify-content: space-between;
+  height: 90vh;
   margin-left: 200px;
-  margin-top: 25px;
+  margin-top: 25%;
   padding: 100px;
-  border-top: solid;
-  background-color: #333;
+  background-color: #2f3a9d;
+  z-index: 99999999;
 }
 
 /* ----------------------------- */
 .vertical-navbar {
   width: 200px;
-  background-color: #333;
+  background-color: #2f3a9d;
   color: #fff;
   height: 100%;
   position: fixed;
@@ -39,13 +41,12 @@ footer {
   top: 0;
   overflow-x: hidden;
   text-decoration: none;
-  border-right: solid black;
 }
 
 .logo {
   display: block;
   text-align: center;
-  background-color: #333;
+  background-color: #2f3a9d;
   z-index: 9999;
 }
 
@@ -65,7 +66,7 @@ footer {
 }
 
 .vertical-menu a:hover {
-  background-color: #555;
+  background-color: #4453e0;
 }
 
 /* ------------------------------ */
@@ -73,11 +74,12 @@ footer {
   display: flex;
   justify-content: space-between;
   color: black;
-  background-color: white;
 }
 
 .cabeçalho-left {
   max-width: 50%;
+  display: block;
+  align-content: center;
 }
 
 .cabeçalho-left h1 {
@@ -89,6 +91,7 @@ footer {
   padding-top: 5%;
   padding-right: 10%;
   font-size: x-large;
+  text-align: justify;
 }
 
 .cabeçalho-right {
@@ -97,22 +100,31 @@ footer {
   max-width: 50%;
 }
 
-.cabeçalho-right input {
+.cabeçalho-right img {
+  height: 400px;
+  width: 600px;
+  border-radius: 10%;
+}
+
+.cabeçalho-left input {
   margin-top: 50px;
   height: 60px;
   width: 160px;
-  font-size: x-large;
+  font-size: 20px;
+  background-color: #e0a734;
+  border-radius: 5px;
 }
 
-.cabeçalho-right input:hover {
+.cabeçalho-left input:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
 /* ----------------------------- */
 #services {
   display: flex;
   justify-content: space-between;
-  margin-top: 10%;
+  margin-top: 25%;
 }
 
 .card {
@@ -120,26 +132,36 @@ footer {
   border-style: solid;
   border-color: black;
   border-radius: 10px;
+  background-color: white;
 }
 
 .card img {
-  height: 400px;
-  width: 360px;
+  height: 500px;
+  width: 450px;
 }
 
 .card-text {
   padding: 25px;
 }
 
+.card h1 {
+  font-size: x-large;
+}
+
 .card p {
   margin-top: 5%;
-  max-width: 310px;
+  max-width: 400px;
+  font-size: large;
+  text-align: justify;
 }
 
 .card input {
   margin-top: 25px;
-  height: 40px;
-  width: 125px;
+  height: 50px;
+  width: 150px;
+  background-color: #e0a734;
+  border-radius: 5px;
+  font-size: large;
 }
 
 .card input:hover {
@@ -149,7 +171,7 @@ footer {
 
 /* ----------------------------- */
 #ofertas {
-  margin-top: 8%;
+  margin-top: 25%;
   display: flex;
 }
 
@@ -158,12 +180,13 @@ footer {
 }
 
 .ofertas-left h1 {
-  font-size: 42px;
+  font-size: 48px;
 }
 
 .ofertas-left p {
   margin-top: 3%;
-  font-size: larger;
+  font-size: x-large;
+  text-align: justify;
 }
 
 .ofertas-right {
@@ -175,7 +198,9 @@ footer {
 .ofertas-right input {
   height: 60px;
   width: 160px;
-  font-size: larger;
+  font-size: large;
+  background-color: #e0a734;
+  border-radius: 5px;
 }
 
 .ofertas-right input:hover {
@@ -185,7 +210,7 @@ footer {
 
 /* ----------------------------- */
 #feedback {
-  margin-top: 8%;
+  margin-top: 25%;
   display: flex;
   max-width: 100%;
   justify-content: space-between;
@@ -196,27 +221,31 @@ footer {
   border-style: solid;
   border-color: black;
   border-radius: 10px;
+  background-color: white;
 }
 
 .box img {
   height: 30px;
-  width: 360px;
+  width: 450px;
   border-bottom: solid;
   border-color: black;
+  color: #e0a734;
 }
 
 .box-text p {
   margin-top: 15px;
+  font-size: large;
+  text-align: justify;
 }
 
 .box-text {
-  padding: 15px 25px 25px 25px;
-  max-width: 360px;
+  padding: 15px 25px;
+  max-width: 450px;
 }
 
 /* ----------------------------- */
 #about {
-  margin-top: 8%;
+  margin-top: 25%;
   display: flex;
 }
 
@@ -230,7 +259,7 @@ footer {
 
 .about-left p {
   margin-top: 3%;
-  font-size: larger;
+  font-size: x-large;
 }
 
 .about-right {
@@ -242,7 +271,9 @@ footer {
 .about-right input {
   height: 60px;
   width: 160px;
-  font-size: larger;
+  font-size: large;
+  background-color: #e0a734;
+  border-radius: 5px;
 }
 
 .about-right input:hover {
@@ -250,10 +281,12 @@ footer {
   cursor: pointer;
 }
 
+/* ----------------------------- */
 .footer-text {
   width: 100%;
+  display: block;
   text-align: center;
-  align-items: center;
+  align-content: center;
 }
 
 .footer-text p {
